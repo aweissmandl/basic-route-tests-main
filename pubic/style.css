@@ -1,0 +1,118 @@
+﻿body {
+  display: flex;
+
+  /* Centers the form horizontally */
+  justify-content: center;
+
+  /* Centers the form vertically */
+  align-items: center;
+
+  /* Give the body a full width/height in order for the form to be appropriately centered */
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+/* Remove default focus behaviour */
+input:focus,
+input:focus-visible,
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* Style the login form */
+body > form {
+  width: max-content;
+  height: max-content;
+
+  /*  Give some breathing space*/
+  padding: 1rem;
+
+  /*  Give it a nice border */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the form's labels */
+form > label {
+  /* Center the label */
+  display: block;
+  text-align: center;
+
+  /*  Make the text nicer */
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  /* Make the text a nice blue */
+  color: #2382e7;
+}
+
+/* Give breathing spaces between form elements */
+form > label > input,
+form > button {
+  margin-top: 1rem;
+}
+
+/* Style the form's input fields */
+body > form input {
+  /* Make the input take up full width */
+  display: block;
+  margin: 0.5rem 0;
+
+  /* Give the input some breathing space */
+  padding: 0.5rem;
+
+  /* Give the input a nice border */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style active inputs */
+body > form input:focus {
+  /* Give the input a nice border */
+  border: 1px solid #2382e7;
+}
+
+/* Style the form's submit button */
+body > form > button {
+  /* Make the button take up full width */
+  display: block;
+  width: 100%;
+
+  /* Give the button some breathing space */
+  padding: 0.5rem;
+
+  /* Give the button a nice border */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  /* Make the button a nice blue */
+  background-color: #2382e7;
+  color: #fff;
+}
+
+/* Give the button a hover effect */
+body > form > button:hover {
+  /* Make the button a darker shade blue */
+  background-color: #1a6bbf;
+
+  /* Show the cursor */
+  cursor: pointer;
+}
+
+/* Style form inputs with errors */
+body > form input.error {
+  /* Give the input a red border */
+  border: 1px solid #ff82e7;
+}
+
+/* Style error message */
+body > form input.error + p {
+  /* Make the text red */
+  color: #ff82e7;
+  /*  Make the text small */
+  font-size: 0.8rem;
+  /*  Make the text close to the input */
+  margin-top: 0.25rem;
+}
